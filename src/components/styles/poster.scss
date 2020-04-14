@@ -1,11 +1,11 @@
 .posterContainer {
-  margin: 0.2rem 2rem 0 0;
+  max-width: 1000px;
+  margin-right: 1rem;
 }
 
-img {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 margin;
+.img {
+  margin: 0 auto;
   -webkit-box-shadow: 4px 8px 19px 0px rgba(0, 0, 0, 0.67);
   box-shadow: 4px 8px 19px 0px rgba(0, 0, 0, 0.67);
+  width: 100%;
 }

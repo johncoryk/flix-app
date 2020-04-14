@@ -1,20 +1,29 @@
-.container {
-  max-width: 800px;
-  margin: 1.9rem auto 0;
+.movieContainer {
+  margin: 1rem auto;
   display: flex;
   flex-direction: row;
-  transition: all ease 100ms;
+  justify-content: space-between;
 }
 
 .rule {
   background-color: #eee;
   border-bottom: 2px solid;
-  margin-top: -0.6rem;
-  margin-bottom: 0.7rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.6rem;
 }
 
-@media (max-device-width: 375px) {
-  .container {
-    flex-wrap: wrap;
+@media (max-width: 500px) {
+  .movieContainer {
+    flex-direction: column;
+    justify-items: center;
+  }
+
+  .posterContainer {
+    margin: 0.5rem auto 1rem;
+  }
+
+  .footerStyles p,
+  a {
+    font-size: 0.5rem;
   }
 }

@@ -1,0 +1,19 @@
+.footerStyles {
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.footerStyles p,
+a {
+  font-size: 0.6rem;
+  letter-spacing: 1.3px;
+}
+
+.footerStyles a {
+  text-decoration: none;
+  transition: all ease 200ms;
+
+  &:hover {
+    color: #468499;
+  }
+}

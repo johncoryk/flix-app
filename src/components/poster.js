@@ -7,6 +7,7 @@ const Poster = ({ posterImg, title }) => {
     <div className="posterContainer">
       {posterImg && (
         <img
+          className="img"
           src={`https://image.tmdb.org/t/p/original/${posterImg}`}
           alt={`${title}`}
         />

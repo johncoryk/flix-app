@@ -13,36 +13,46 @@ function App() {
   const getMovie = async (e) => {
     e.preventDefault();
     const movie = movieTitle;
-    const apiCall = await fetch(
-      `https://api.themoviedb.org/3/movie/${movie}?api_key=${KEY}`
+    const apiCallOne = await fetch(
+      `https://api.themoviedb.org/3/search/movie?api_key=${KEY}&query=${movie}`
     );
-    const data = await apiCall.json();
+    const preData = await apiCallOne.json();
 
-    if (apiCall.ok) {
-      setMovieData({
-        data,
-        posterImg: data.poster_path,
-        title: data.title,
-        tagline: data.tagline,
-        releaseDate: data.release_date.slice(0, 4),
-        genre: data.genres[0].name,
-        overview: data.overview,
-        backdrop: data.backdrop_path,
-        error: '',
-      });
-    } else {
-      setMovieData({
-        data,
-        posterImg: '',
-        title: '',
-        tagline: '',
-        releaseDate: '',
-        genre: '',
-        overview: '',
-        backdrop: '',
-        error: 'Movie not found...',
-      });
+    if (apiCallOne.ok) {
+      try {
+        const apiCallTwo = await fetch(
+          `https://api.themoviedb.org/3/movie/${preData.results[0].id}?api_key=${KEY}`
+        );
+
+        const data = await apiCallTwo.json();
+
+        if (apiCallTwo.ok) {
+          setMovieData({
+            data,
+            posterImg: data.poster_path,
+            title: data.title,
+            tagline: data.tagline,
+            releaseDate: data.release_date.slice(0, 4),
+            genre: data.genres[0].name,
+            overview: data.overview,
+            backdrop: data.backdrop_path,
+            error: '',
+          });
+        }
+      } catch {
+        setMovieData({
+          posterImg: '',
+          title: '',
+          tagline: '',
+          releaseDate: '',
+          genre: '',
+          overview: '',
+          backdrop: '',
+          error: 'Movie not found...',
+        });
+      }
     }
+
     setMovieTitle('');
   };
 

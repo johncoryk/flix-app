@@ -1,11 +1,7 @@
 .title {
-  font-size: 4rem;
-  line-height: 3.7rem;
-  transition: all ease 200ms;
+  font-size: 2.5rem;
+  line-height: 2.75rem;
 }
 
-@media (max-device-width: 375px) {
-  .title {
-    font-size: 2.5rem;
-  }
+@media (max-device-width: 500px) {
 }

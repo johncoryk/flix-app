@@ -19,9 +19,9 @@ const Movie = ({
 }) => {
   return (
     <>
-      <div className="container">
+      <div className="movieContainer">
         <Poster posterImg={posterImg} title={title} />
-        <div>
+        <div className="movieInfo">
           <MovieTitle title={title} />
           <MovieTagline tagline={tagline} />
           <Date releaseDate={releaseDate} />

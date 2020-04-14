@@ -1,0 +1,22 @@
+.inputBox {
+  margin-right: 1rem;
+  color: #333;
+  padding: 0.4rem;
+  font-size: 0.8rem;
+  border-radius: 2px;
+  background-color: rgba(238, 238, 238, 0.9);
+  border: none;
+}
+
+.inputBtn {
+  color: #333;
+  padding: 0.3rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 2px;
+  transition: all ease 100ms;
+
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+}
