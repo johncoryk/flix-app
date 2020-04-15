@@ -6,6 +6,10 @@
   font-family: 'Bree Serif', serif;
   font-weight: normal;
   letter-spacing: 2px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .headerRule {

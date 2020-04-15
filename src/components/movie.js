@@ -26,7 +26,7 @@ const Movie = ({
           <MovieTagline tagline={tagline} />
           <Date releaseDate={releaseDate} />
           <Genre genre={genre} />
-          <div className="rule"></div>
+          {title && <div className="rule"></div>}
           <Overview overview={overview} />
         </div>
       </div>

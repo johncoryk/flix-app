@@ -6,12 +6,13 @@
 .footerStyles p,
 a {
   font-size: 0.6rem;
-  letter-spacing: 1.3px;
+  letter-spacing: 0.7px;
 }
 
 .footerStyles a {
   text-decoration: none;
   transition: all ease 200ms;
+  color: #aaa;
 
   &:hover {
     color: #468499;

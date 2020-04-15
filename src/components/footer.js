@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footerStyles">
       <p>
         This site was built with React and loads of coffee by{' '}
-        <a href="github.com/johncoryk">Cory Kelley.</a>
+        <a href="http://github.com/johncoryk">Cory Kelley.</a>
       </p>
     </footer>
   );
