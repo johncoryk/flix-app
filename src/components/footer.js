@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <footer className="footerStyles">
       <p>
-        This site was built with React and loads of coffee by{' '}
-        <a href="http://github.com/johncoryk">Cory Kelley.</a>
+        This site was built with React & lots of coffee by{' '}
+        <a href="http://github.com/johncoryk">Cory Kelley</a>, © 2020
       </p>
     </footer>
   );

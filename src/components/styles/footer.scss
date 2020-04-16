@@ -1,20 +1,20 @@
 .footerStyles {
   margin-bottom: 0.5rem;
   margin-top: 1rem;
+  text-align: center;
 }
 
 .footerStyles p,
 a {
-  font-size: 0.6rem;
-  letter-spacing: 0.7px;
+  font-size: 0.75rem;
 }
 
 .footerStyles a {
   text-decoration: none;
   transition: all ease 200ms;
-  color: #aaa;
+  color: #468499;
 
   &:hover {
-    color: #468499;
+    color: #eee;
   }
 }
